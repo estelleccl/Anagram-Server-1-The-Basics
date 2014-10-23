@@ -1,0 +1,21 @@
+<div class="container">
+  <h1>Welcome to Find Anagram World!</h1>
+  <p>Give me a word! I'm so genius!!!!</p>
+
+  <form action='/find_anagram' method='post' >
+    <input type="text" name="user_input" placeholder="Enter word"></input>
+    <input type="submit" name="submit"></input>
+  </form>
+
+<h3>Wala!!!! Here are the words:</h3>
+<div class="anagram">
+    <%if @word_anagram%>
+    <% @word_anagram.each do |word|%>
+    <p><%=word%></p>
+    <%end%>
+    <%end%>
+  </div>
+</div>
+
+
+

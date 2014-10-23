@@ -1,0 +1,14 @@
+<div class="container">
+    <h1>Welcome to Find Anagram World!</h1>
+    <p>Give me a word! I'm so genius!!!!</p>
+  <h3>This is the word given: </h3>
+    <p><%=original_word%></p>
+  <h3>Wala!!!! Here are the words:</h3>
+  <div class="anagram">
+    <%if @word_anagram%>
+    <% @word_anagram.each do |word|%>
+    <p><%=word%></p>
+    <%end%>
+    <%end%>
+  </div>
+</div>
